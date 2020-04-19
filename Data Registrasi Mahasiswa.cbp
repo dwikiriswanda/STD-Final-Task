@@ -32,6 +32,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="listMahasiswa.cpp" />
+		<Unit filename="listMahasiswa.h" />
+		<Unit filename="listMataKuliah.cpp" />
+		<Unit filename="listMataKuliah.h" />
+		<Unit filename="listRelasi.cpp" />
+		<Unit filename="listRelasi.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
