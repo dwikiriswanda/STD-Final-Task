@@ -1,6 +1,7 @@
 # STD-Final-Task
-Final Task for Data Structure Course at Telkom University
-CLI based, implemented in C++
+Final Task for Data Structure Course at Telkom University.
+CLI based. 
+Implemented in C++
 
 ## Structures
 ### Mahasiswa
