@@ -1,6 +1,6 @@
 # STD-Final-Task
 Final Task for Data Structure Course at Telkom University
-CLI based banking system management, implemented in C++
+CLI based, implemented in C++
 
 ## Structures
 ### Mahasiswa
@@ -41,4 +41,4 @@ Task :
 * [x] Show all Mahasiswa with all of Mata Kuliah they took
 * [x] Show Mahasiswa that took certain Mata Kuliah
 * [x] Show Mata Kuliah that has been taken by certain Mahasiswa
-* [x] Show Mata Kuliah that has the most number of Mahasiswa and the least
+* [x] Show Mata Kuliah that has the most and the least number of Mahasiswa
