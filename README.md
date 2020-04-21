@@ -5,7 +5,7 @@ Implemented in C++
 
 ## Structures
 ### Mahasiswa
-Using double linked list.
+Using single linked list.
 Act as the parent of relational list.
 
 ### Relasi
@@ -13,7 +13,7 @@ Using double linked list.
 Act as multi-double linked list alias relational list.
 
 ### Mata Kuliah
-Using double linked list.
+Using circular linked list.
 Act as the child of relational list.
 
 ## To Do List
