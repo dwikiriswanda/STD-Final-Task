@@ -2,50 +2,36 @@
 #define LISTMATAKULIAH_H_INCLUDED
 
 #include <iostream>
-#include <stdlib.h>
-#include <conio.h>
-#include <string>
-
-#define firstMataKuliah(L) (L).firstMataKuliah
-#define prevMataKuliah(P) (P)->prevMataKuliah
-#define infoMataKuliah(P) (P)->infoMataKuliah
-#define nextMataKuliah(P) (P)->nextMataKuliah
-#define keMataKuliah(P) (P)->keMataKuliah
-
 using namespace std;
 
-struct MataKuliah{
-    string namaMataKuliah;
-    string tingkat;
-    int sks;
-};
+#define first(L) L.first
+#define last(L) L.last
+#define prev(P) P->prev
+#define info(P) P->info
+#define next(P) P->next
 
+typedef string infotypeMataKuliah;
 typedef struct elmListMataKuliah *addressMataKuliah;
 
 struct elmListMataKuliah{
-    addressMataKuliah prevMataKuliah;
-    MataKuliah infoMataKuliah;
-    addressMataKuliah nextMataKuliah;
+    addressMataKuliah prev;
+    infotypeMataKuliah info;
+    addressMataKuliah next;
 };
 
 struct listMataKuliah{
-    addressMataKuliah firstMataKuliah;
+    addressMataKuliah first;
+    addressMataKuliah last;
 };
 
 void createListMataKuliah(listMataKuliah &L);
-addressMataKuliah alokasiMataKuliah(MataKuliah x);
-void dealokasiMataKuliah(addressMataKuliah &P);
-void insertFirstMataKuliah(listMataKuliah &L, addressMataKuliah P);
-void insertLastMataKuliah(listMataKuliah &L, addressMataKuliah P);
-addressMataKuliah findElmMataKuliah(listMataKuliah L, string x);
-void deleteFirstMataKuliah(listMataKuliah &L, addressMataKuliah &P);
-void deleteLastMataKuliah(listMataKuliah &L, addressMataKuliah &P);
-void printInfoMataKuliah(listMataKuliah L);
-void insertAfterMataKuliah(addressMataKuliah Prec, addressMataKuliah P);
-void deleteAfterMataKuliah(addressMataKuliah Prec, addressMataKuliah &P);
-addressMataKuliah inputMataKuliah();
-void editInfoMataKuliah(listMataKuliah L, addressMataKuliah &P);
-void dataMataKuliah(listMataKuliah &L);
-void deleteSearchMataKuliah(listMataKuliah &L, addressMataKuliah &P);
+void insertLast(listMataKuliah &L, addressMataKuliah P);
+void deleteFirst(listMataKuliah &L, addressMataKuliah &P);
+void deleteLast(listMataKuliah &L, addressMataKuliah &P);
+void deleteAfter(listMataKuliah &L,addressMataKuliah Prec, addressMataKuliah &P);
+void del(listMataKuliah &L,addressMataKuliah &P);
+addressMataKuliah alokasiMataKuliah(infotypeMataKuliah x);
+addressMataKuliah findElm(listMataKuliah L, infotypeMataKuliah x);
+void printInfo(listMataKuliah L);
 
 #endif // LISTMATAKULIAH_H_INCLUDED

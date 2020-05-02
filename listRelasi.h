@@ -4,49 +4,38 @@
 #include "listMahasiswa.h"
 #include "listMataKuliah.h"
 
-#include <stdlib.h>
-#include <conio.h>
-#include <string>
 #include <iostream>
-
-#define firstRelasi(L) (L).firstRelasi
-#define prevRelasi(P) (P)->prevRelasi
-#define nextRelasi(P) (P)->nextRelasi
-
 using namespace std;
+
+#define first(L) L.first
+#define mahasiswa(P) P->mahasiswa
+#define matakuliah(P) P->matakuliah
+#define next(P) P->next
 
 typedef struct elmListRelasi *addressRelasi;
 
 struct elmListRelasi{
-    addressRelasi prevRelasi;
-    addressMahasiswa keMahasiswa;
-    addressMataKuliah keMataKuliah;
-    addressRelasi nextRelasi;
+    addressMahasiswa mahasiswa;
+    addressMataKuliah matakuliah;
+    addressRelasi next;
 };
 
-struct ListRelasi{
-    addressRelasi firstRelasi;
+struct listRelasi{
+    addressRelasi first;
 };
 
 void createListRelasi(listRelasi &L);
-addressRelasi alokasiRelasi();
-void dealokasiRelasi(addressRelasi &P);
-void insertFirstRelasi(listRelasi &L, addressRelasi P);
-void insertLastRelasi(listRelasi &L, addressRelasi P);
-addressRelasi findRelasi(listRelasi L, string x, string y);
+void insertFirst(listRelasi &L, addressRelasi P);
 void deleteFirst(listRelasi &L, addressRelasi &P);
 void deleteLast(listRelasi &L, addressRelasi &P);
-void printRelasi(listRelasi L);
-void insertAfterRelasi(addressRelasi Prec, addressRelasi P);
-void deleteAfterRelasi(addressRelasi Prec, addressRelasi &P);
-void menu(listMahasiswa LM, listMataKuliah LMK, listRelasi LR);
-void inputRelasi(listMahasiswa LM, listMataKuliah LMK, listRelasi &LR);
-void deleteSearchRelasi(listRelasi &L, addressRelasi &P);
-void deleteMahasiswa(listRelasi &LR, listMahasiswa &LM, addressMahasiswa &PM);
-void deleteMataKuliah(listRelasi &LR, listMataKuliah &LMK, addressMataKuliah &PMK);
-void searchMahasiswa(listMahasiswa LM, listRelasi LR, addressMahasiswa P);
-void searchMataKuliah(listMataKuliah LMK, listRelasi LR, addressMataKuliah PMK);
-void dataRelasi(listRelasi &L, listMahasiswa LM, listMataKuliah LMK);
-void deleteRelasi(listRelasi &L, addressRelasi &P);
+void deleteAfter(listRelasi &L,addressRelasi Prec, addressRelasi &P);
+void delRelasiP(listRelasi &L, addressRelasi &P);
+void delRelasiC(listRelasi &L,addressRelasi &P);
+int cariMax(listRelasi L,listMataKuliah P);
+void printMaxi(listRelasi L,listMataKuliah P);
+addressRelasi alokasiRelasi( addressMahasiswa P, addressMataKuliah C);
+addressRelasi findElmParent(listRelasi L, addressMahasiswa P) ;
+addressRelasi findElmChild(listRelasi L, addressMataKuliah C) ;
+void printInfo(listRelasi L);
 
 #endif // LISTRELASI_H_INCLUDED
