@@ -1,25 +1,42 @@
 # depslib dependency file v1.0
-1588438159 source:d:\telkom university\se-43-03\kelas\semester 2\struktur data\tubes\data registrasi mahasiswa\listmahasiswa.cpp
+1588513837 source:d:\telkom university\se-43-03\kelas\semester 2\struktur data\tubes\data registrasi mahasiswa\listmahasiswa.cpp
 	"listMahasiswa.h"
 
-1588438342 d:\telkom university\se-43-03\kelas\semester 2\struktur data\tubes\data registrasi mahasiswa\listmahasiswa.h
+1588439031 d:\telkom university\se-43-03\kelas\semester 2\struktur data\tubes\data registrasi mahasiswa\listmahasiswa.h
 	<iostream>
 
-1588438159 source:d:\telkom university\se-43-03\kelas\semester 2\struktur data\tubes\data registrasi mahasiswa\listmatakuliah.cpp
+1588513837 source:d:\telkom university\se-43-03\kelas\semester 2\struktur data\tubes\data registrasi mahasiswa\listmatakuliah.cpp
 	"listMataKuliah.h"
 
-1588438343 d:\telkom university\se-43-03\kelas\semester 2\struktur data\tubes\data registrasi mahasiswa\listmatakuliah.h
+1588472990 d:\telkom university\se-43-03\kelas\semester 2\struktur data\tubes\data registrasi mahasiswa\listmatakuliah.h
 	<iostream>
 
-1588437333 source:d:\telkom university\se-43-03\kelas\semester 2\struktur data\tubes\data registrasi mahasiswa\listrelasi.cpp
+1588513431 source:d:\telkom university\se-43-03\kelas\semester 2\struktur data\tubes\data registrasi mahasiswa\listrelasi.cpp
 	"listRelasi.h"
 
-1588438343 d:\telkom university\se-43-03\kelas\semester 2\struktur data\tubes\data registrasi mahasiswa\listrelasi.h
+1588473008 d:\telkom university\se-43-03\kelas\semester 2\struktur data\tubes\data registrasi mahasiswa\listrelasi.h
 	"listMahasiswa.h"
 	"listMataKuliah.h"
 	<iostream>
 
-1588438178 source:d:\telkom university\se-43-03\kelas\semester 2\struktur data\tubes\data registrasi mahasiswa\main.cpp
+1588513431 source:d:\telkom university\se-43-03\kelas\semester 2\struktur data\tubes\data registrasi mahasiswa\main.cpp
+	"menu.h"
+
+1588483790 d:\telkom university\se-43-03\kelas\semester 2\struktur data\tubes\data registrasi mahasiswa\menu.cpp
+	<iostream>
+	<stdlib.h>
+	"listMataKuliah.h"
+	"listMahasiswa.h"
+	"listRelasi.h"
+
+1588485677 source:d:\telkom university\se-43-03\kelas\semester 2\struktur data\tubes\data registrasi mahasiswa\menu.cpp
+	<iostream>
+	<stdlib.h>
+	"listMataKuliah.h"
+	"listMahasiswa.h"
+	"listRelasi.h"
+
+1588514099 d:\telkom university\se-43-03\kelas\semester 2\struktur data\tubes\data registrasi mahasiswa\menu.h
 	<iostream>
 	<stdlib.h>
 	"listMataKuliah.h"
