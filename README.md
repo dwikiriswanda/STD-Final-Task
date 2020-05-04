@@ -1,4 +1,5 @@
-# STD-Final-Task
+<img src="banner.png" alt="Menu Awal Aplikasi Data Registrasi Mahasiswa">
+
 Final Task for Data Structure Course at Telkom University.
 CLI based. 
 Implemented in C++
