@@ -5,15 +5,15 @@ Implemented in C++
 
 ## Structures
 ### Mahasiswa
-Using single linked list.
+Using Circular Single Linked-List.
 Act as the parent of relational list.
 
 ### Relasi
-Using double linked list.
+Using Single Linked-List.
 Act as multi-double linked list alias relational list.
 
 ### Mata Kuliah
-Using circular linked list.
+Using Double Linked-List.
 Act as the child of relational list.
 
 ## To Do List
@@ -21,15 +21,17 @@ Act as the child of relational list.
 Mahasiswa :
 
 * [x] Defining and Implement alocation
+* [x] Defining and Implement input operation
 * [x] Defining and Implement delete operation
-* [x] Defining and Implement insert operation
+* [x] Defining and Implement view operation
 * [x] Defining and Implement relation data structure
 
 Mata Kuliah :
 
 * [x] Defining and Implement alocation
+* [x] Defining and Implement input operation
 * [x] Defining and Implement delete operation
-* [x] Defining and Implement insert operation
+* [x] Defining and Implement view operation
 * [x] Defining and Implement relation data structure
 
 Task :
