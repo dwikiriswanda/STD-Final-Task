@@ -1,8 +1,10 @@
-<img src="banner.PNG" alt="Menu Awal Aplikasi Data Registrasi Mahasiswa">
+<h1 align="center">
+   <img src="banner.PNG" alt="Menu Awal Aplikasi Data Registrasi Mahasiswa">
+</h1>
 
 Final Task for Data Structure Course at Telkom University.
 CLI based. 
-Implemented in C++
+Implemented in C++.
 
 ## Structures
 ### Mahasiswa
